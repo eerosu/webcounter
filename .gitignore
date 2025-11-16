@@ -1,0 +1,5 @@
+geckodriver-1.log
+.git/
+__pycache__
+.pytest_cache/
+.venv/
