@@ -1,5 +1,6 @@
-geckodriver-1.log
+geckodriver-*.log
 .git/
 __pycache__
 .pytest_cache/
 .venv/
+*.png
