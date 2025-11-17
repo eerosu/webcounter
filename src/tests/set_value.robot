@@ -4,12 +4,15 @@ Suite Setup  Open And Configure Browser
 Suite Teardown  Close Browser
 
 *** Test Cases ***
-When counter has a nonzero value and it is reset the value becomes zero
+Set counter value
     Go To  ${HOME_URL}
     Input Text  value  0
     Click Button  aseta
     Page Should Contain  nappia painettu 0 kertaa
-    Click Button  Paina
-    Page Should Contain  nappia painettu 1 kertaa
-    Click Button  Nollaa
-    Page Should Contain  nappia painettu 0 kertaa
+    Input Text  value  5
+    Click Button  aseta
+    Page Should Contain  nappia painettu 5 kertaa
+    Input Text  value  10
+    Click Button  aseta
+    Page Should Contain  nappia painettu 10 kertaa
+   
